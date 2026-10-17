@@ -1,0 +1,50 @@
+# ===== Unity =====
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Bb]uild/
+/[Bb]uilds/
+/[Ll]ogs/
+/[Uu]ser[Ss]ettings/
+/[Mm]emoryCaptures/
+/[Rr]ecordings/
+/[Aa]ssets/Plugins/Editor/JetBrains*
+
+# Archivos que Unity regenera solo (solución y proyectos de la raíz)
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+*.pidb.meta
+*.pdb.meta
+*.mdb.meta
+*.tmp
+sysinfo.txt
+crashlytics-build.properties
+
+# Builds
+*.apk
+*.aab
+*.app
+*.unitypackage
+
+# ===== Editores y sistema =====
+.vs/
+.idea/
+.vscode/
+.DS_Store
+
+# ===== Demo de consola de la lógica (fuera de Unity) =====
+# Unity ignora todos los .csproj, pero este sí se sube.
+!/Tools/**/*.csproj
+Tools/**/bin/
+Tools/**/obj/

@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <!--
+        Demo de consola para probar la lógica sin abrir Unity.
+        No tiene copias de los .cs: compila directo los archivos de Assets/Scripts/Logica,
+        así que lo que pruebas aquí es exactamente lo que corre en Unity.
+    -->
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net8.0</TargetFramework>
+        <!-- Permite correr con cualquier .NET más nuevo (9, 10...) instalado en la compu -->
+        <RollForward>Major</RollForward>
+        <!-- C# 9 = lo que soporta Unity. Si usas algo más nuevo, aquí truena. -->
+        <LangVersion>9.0</LangVersion>
+        <Nullable>disable</Nullable>
+        <ImplicitUsings>disable</ImplicitUsings>
+    </PropertyGroup>
+    <ItemGroup>
+        <Compile Include="../../Assets/Scripts/Logica/**/*.cs" Link="Logica/%(RecursiveDir)%(Filename)%(Extension)" />
+    </ItemGroup>
+</Project>
